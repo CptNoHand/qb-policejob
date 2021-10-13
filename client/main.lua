@@ -605,3 +605,32 @@ Citizen.CreateThread(function()
         EndTextCommandSetBlipName(blip)
     end
 end)
+
+exports['qb-target']:AddBoxZone("MissionRowDutyClipboard", vector3(441.7989, -982.0529, 30.67834), 0.45, 0.35, {
+	name="MissionRowDutyClipboard",
+	heading=11.0,
+	debugPoly=false,
+	minZ=30.77834,
+	maxZ=30.87834,
+	}, {
+		options = {
+			{
+            			type = "client",
+            			event = "Toggle:Duty",
+				icon = "fas fa-sign-in-alt",
+				label = "Sign In",
+				job = "police",
+			},
+		},
+		distance = 3.5
+})
+
+-- This event is only for the QBCore resource qb-policejob
+RegisterNetEvent('Toggle:Duty')
+AddEventHandler('Toggle:Duty', function()
+    onDuty = not onDuty
+    TriggerServerEvent("police:server:UpdateCurrentCops")
+    TriggerServerEvent("QBCore:ToggleDuty")
+    TriggerServerEvent("police:server:UpdateBlips")
+    TriggerEvent('qb-policealerts:ToggleDuty', onDuty)
+end)
