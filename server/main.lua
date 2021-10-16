@@ -472,7 +472,7 @@ local function UpdateBlips()
     local dutyPlayers = {}
     local players = QBCore.Functions.GetQBPlayers()
     for k, v in pairs(players) do
-        if (v.PlayerData.job.name == "police" or v.PlayerData.job.name == "ambulance") and v.PlayerData.job.onduty if (v.PlayerData.job.name == "fbi" then
+        if (v.PlayerData.job.name == "police" or v.PlayerData.job.name == "ambulance" or v.PlayerData.job.name == "fbi") and v.PlayerData.job.onduty then
             local coords = GetEntityCoords(GetPlayerPed(v.PlayerData.source))
             local heading = GetEntityHeading(GetPlayerPed(v.PlayerData.source))
             dutyPlayers[#dutyPlayers+1] = {
