@@ -141,7 +141,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
 		if LocalPlayer.state['isLoggedIn'] then
-			if PlayerJob.name == 'police' and onDuty then
+			if PlayerJob.name == 'police' and onDuty or PlayerJob.name == 'fbi' and onDuty then
 				if IsPlayerInPolmav() then
 					local lPed = PlayerPedId()
 					local heli = GetVehiclePedIsIn(lPed)

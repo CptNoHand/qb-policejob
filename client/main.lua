@@ -255,7 +255,7 @@ RegisterNetEvent('police:client:PoliceEmergencyAlert', function(callsign, street
 end)
 
 RegisterNetEvent('police:client:GunShotAlert', function(streetLabel, isAutomatic, fromVehicle, coords, vehicleInfo)
-    if PlayerJob.name == 'police' and onDuty then
+    if PlayerJob.name == 'police' and onDuty or PlayerJob.name == 'fbi' and onDuty then
         local msg = ""
         local blipSprite = 313
         local blipText = "Shots fired"
@@ -324,7 +324,7 @@ RegisterNetEvent('police:client:GunShotAlert', function(streetLabel, isAutomatic
 end)
 
 RegisterNetEvent('police:client:VehicleCall', function(pos, alertTitle, streetLabel, modelPlate, modelName)
-    if PlayerJob.name == 'police' and onDuty then
+    if PlayerJob.name == 'police' and onDuty or PlayerJob.name == 'fbi' and onDuty then
         TriggerEvent('qb-policealerts:client:AddPoliceAlert', {
             timeOut = 4000,
             alertTitle = alertTitle,
@@ -375,7 +375,7 @@ RegisterNetEvent('police:client:VehicleCall', function(pos, alertTitle, streetLa
 end)
 
 RegisterNetEvent('police:client:HouseRobberyCall', function(coords, msg, gender, streetLabel)
-    if PlayerJob.name == 'police' and onDuty then
+    if PlayerJob.name == 'police' and onDuty or PlayerJob.name == 'fbi' and onDuty then
         TriggerEvent('qb-policealerts:client:AddPoliceAlert', {
             timeOut = 5000,
             alertTitle = "Burglary attempt",
@@ -427,7 +427,7 @@ RegisterNetEvent('police:PlaySound', function()
 end)
 
 RegisterNetEvent('112:client:SendPoliceAlert', function(notifyType, data, blipSettings)
-    if PlayerJob.name == 'police' and onDuty then
+    if PlayerJob.name == 'police' and onDuty or PlayerJob.name == 'fbi' and onDuty then
         if notifyType == "flagged" then
             TriggerEvent('qb-policealerts:client:AddPoliceAlert', {
                 timeOut = 5000,
@@ -478,7 +478,7 @@ RegisterNetEvent('112:client:SendPoliceAlert', function(notifyType, data, blipSe
 end)
 
 RegisterNetEvent('police:client:PoliceAlertMessage', function(title, caption, coords) -- Use this for robberies, etc by TriggerServerEvent('police:server:PoliceAlertMessage', title, caption)
-    if PlayerJob.name == 'police' and onDuty then
+    if PlayerJob.name == 'police' and onDuty or PlayerJob.name == 'fbi' and onDuty then
         QBCore.Functions.Notify({text = title, caption = caption}, 'police')
         PlaySound(-1, "Lose_1st", "GTAO_FM_Events_Soundset", 0, 0, 1)
         local transG = 100

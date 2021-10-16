@@ -191,7 +191,7 @@ end
 local function IsArmoryWhitelist() -- being removed
     local retval = false
 
-    if QBCore.Functions.GetPlayerData().job.name == 'police' then
+    if QBCore.Functions.GetPlayerData().job.name == 'police' or QBCore.Functions.GetPlayerData().job.name == 'fbi' then
         retval = true
     end
     return retval
@@ -366,7 +366,7 @@ end)
 CreateThread(function()
     while true do
         sleep = 2000
-        if LocalPlayer.state['isLoggedIn'] and PlayerJob.name == "police" then
+        if LocalPlayer.state['isLoggedIn'] and PlayerJob.name == "police" or PlayerJob.name == "fbi" then
             local pos = GetEntityCoords(PlayerPedId())
             for k, v in pairs(Config.Locations["duty"]) do
                 if #(pos - v) < 5 then
