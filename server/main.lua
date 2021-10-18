@@ -457,7 +457,7 @@ QBCore.Functions.CreateUseableItem("moneybag", function(source, item)
     local Player = QBCore.Functions.GetPlayer(src)
     if Player.Functions.GetItemByName(item.name) then
         if item.info and item.info ~= "" then
-            if Player.PlayerData.job.name ~= "police" then
+            if Player.PlayerData.job.name ~= "police" or Player.PlayerData.job.name ~= "fbi" then
                 if Player.Functions.RemoveItem("moneybag", 1, item.slot) then
                     Player.Functions.AddMoney("cash", tonumber(item.info.cash), "used-moneybag")
                 end
