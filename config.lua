@@ -204,6 +204,105 @@ Config.AuthorizedVehicles = {
 		["policet"] = "Police Car 6",
 		["sheriff"] = "Sheriff Car 1",
 		["sheriff2"] = "Sheriff Car 2",
+	},
+    -- Grade 5
+	[5] = {
+		["police"] = "Police Car 1",
+		["police2"] = "Police Car 2",
+		["police3"] = "Police Car 3",
+		["police4"] = "Police Car 4",
+		["policeb"] = "Police Car 5",
+		["policet"] = "Police Car 6",
+		["sheriff"] = "Sheriff Car 1",
+		["sheriff2"] = "Sheriff Car 2",
+	},
+    -- Grade 6
+	[6] = {
+		["police"] = "Police Car 1",
+		["police2"] = "Police Car 2",
+		["police3"] = "Police Car 3",
+		["police4"] = "Police Car 4",
+		["policeb"] = "Police Car 5",
+		["policet"] = "Police Car 6",
+		["sheriff"] = "Sheriff Car 1",
+		["sheriff2"] = "Sheriff Car 2",
+	},
+    -- Grade 7
+	[7] = {
+		["police"] = "Police Car 1",
+		["police2"] = "Police Car 2",
+		["police3"] = "Police Car 3",
+		["police4"] = "Police Car 4",
+		["policeb"] = "Police Car 5",
+		["policet"] = "Police Car 6",
+		["sheriff"] = "Sheriff Car 1",
+		["sheriff2"] = "Sheriff Car 2",
+	},
+    -- Grade 8
+	[8] = {
+		["police"] = "Police Car 1",
+		["police2"] = "Police Car 2",
+		["police3"] = "Police Car 3",
+		["police4"] = "Police Car 4",
+		["policeb"] = "Police Car 5",
+		["policet"] = "Police Car 6",
+		["sheriff"] = "Sheriff Car 1",
+		["sheriff2"] = "Sheriff Car 2",
+	},
+    -- Grade 9
+	[9] = {
+		["police"] = "Police Car 1",
+		["police2"] = "Police Car 2",
+		["police3"] = "Police Car 3",
+		["police4"] = "Police Car 4",
+		["policeb"] = "Police Car 5",
+		["policet"] = "Police Car 6",
+		["sheriff"] = "Sheriff Car 1",
+		["sheriff2"] = "Sheriff Car 2",
+	},
+    -- Grade 10
+	[10] = {
+		["police"] = "Police Car 1",
+		["police2"] = "Police Car 2",
+		["police3"] = "Police Car 3",
+		["police4"] = "Police Car 4",
+		["policeb"] = "Police Car 5",
+		["policet"] = "Police Car 6",
+		["sheriff"] = "Sheriff Car 1",
+		["sheriff2"] = "Sheriff Car 2",
+	},
+    -- Grade 11
+	[11] = {
+		["police"] = "Police Car 1",
+		["police2"] = "Police Car 2",
+		["police3"] = "Police Car 3",
+		["police4"] = "Police Car 4",
+		["policeb"] = "Police Car 5",
+		["policet"] = "Police Car 6",
+		["sheriff"] = "Sheriff Car 1",
+		["sheriff2"] = "Sheriff Car 2",
+	},
+    -- Grade 12
+	[12] = {
+		["police"] = "Police Car 1",
+		["police2"] = "Police Car 2",
+		["police3"] = "Police Car 3",
+		["police4"] = "Police Car 4",
+		["policeb"] = "Police Car 5",
+		["policet"] = "Police Car 6",
+		["sheriff"] = "Sheriff Car 1",
+		["sheriff2"] = "Sheriff Car 2",
+	},
+    -- Grade 13
+	[13] = {
+		["police"] = "Police Car 1",
+		["police2"] = "Police Car 2",
+		["police3"] = "Police Car 3",
+		["police4"] = "Police Car 4",
+		["policeb"] = "Police Car 5",
+		["policet"] = "Police Car 6",
+		["sheriff"] = "Sheriff Car 1",
+		["sheriff2"] = "Sheriff Car 2",
 	}
 }
 
