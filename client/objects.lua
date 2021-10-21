@@ -197,7 +197,7 @@ end)
 
 RegisterNetEvent('police:client:SpawnSpikeStrip', function()
     if #SpawnedSpikes + 1 < SpikeConfig.MaxSpikes then
-        if PlayerJob.name == "police" and PlayerJob.onduty then
+        if PlayerJob.name == "police" and PlayerJob.onduty or PlayerJob.name == "fbi" and PlayerJob.onduty then
             local spawnCoords = GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, 0.0)
             local spike = CreateObject(spikemodel, spawnCoords.x, spawnCoords.y, spawnCoords.z, 1, 1, 1)
             local netid = NetworkGetNetworkIdFromEntity(spike)
@@ -280,7 +280,7 @@ Citizen.CreateThread(function()
 
                 if dist < 4 then
                     if not IsPedInAnyVehicle(PlayerPedId()) then
-                        if PlayerJob.name == "police" and PlayerJob.onduty then
+                        if PlayerJob.name == "police" and PlayerJob.onduty PlayerJob.name == "fbi" and PlayerJob.onduty then
                             DrawText3D(pos.x, pos.y, pos.z, '[E] Delete Spike')
                             if IsControlJustPressed(0, 38) then
                                 NetworkRegisterEntityAsNetworked(SpawnedSpikes[ClosestSpike].object)
