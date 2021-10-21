@@ -280,7 +280,7 @@ Citizen.CreateThread(function()
 
                 if dist < 4 then
                     if not IsPedInAnyVehicle(PlayerPedId()) then
-                        if PlayerJob.name == "police" and PlayerJob.onduty PlayerJob.name == "fbi" and PlayerJob.onduty then
+                        if PlayerJob.name == "police" and PlayerJob.onduty or PlayerJob.name == "fbi" and PlayerJob.onduty then
                             DrawText3D(pos.x, pos.y, pos.z, '[E] Delete Spike')
                             if IsControlJustPressed(0, 38) then
                                 NetworkRegisterEntityAsNetworked(SpawnedSpikes[ClosestSpike].object)
