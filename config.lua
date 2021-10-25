@@ -303,6 +303,12 @@ Config.AuthorizedVehicles = {
 		["policet"] = "Police Car 6",
 		["sheriff"] = "Sheriff Car 1",
 		["sheriff2"] = "Sheriff Car 2",
+        ["policeold1"] = "Police Old 1",
+        ["policeold2"] = "Police Old 2",
+        ["pranger"] = "Pranger",
+        ["riot"] = "Riot",
+        ["fbi"] = "FBI 2",
+        ["fbi2"] = "FBI 2",
 	}
 }
 
