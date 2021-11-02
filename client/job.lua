@@ -138,7 +138,7 @@ function TakeOutImpound(vehicle)
     end, coords, true)
 end
 
-RegisterNetEvent('police:client:TakeOutImpouund', function(data)
+RegisterNetEvent('police:client:TakeOutImpound', function(data)
     local vehicle = data.vehicle
     TakeOutImpound(vehicle)
 end)
@@ -252,9 +252,11 @@ function MenuImpound()
                 local enginePercent = round(v.engine / 10, 0)
                 local bodyPercent = round(v.body / 10, 0)
                 local currentFuel = v.fuel
+                local vname = QBCore.Shared.Vehicles[v.vehicle].name
+
                 impoundMenu[#impoundMenu+1] = {
-                    header = QBCore.Shared.Vehicles[v.vehicle]["name"],
-                    txt = "Engine: " .. enginePercent .. "%", " Body: " .. bodyPercent.. "%", " Fuel: "..currentFuel.. "%",
+                    header = vname.." ["..v.plate.."]",
+                    txt = "Engine: " .. enginePercent .. "% | Fuel: "..currentFuel.. "%",
                     params = {
                         event = "police:client:TakeOutImpound",
                         args = {
