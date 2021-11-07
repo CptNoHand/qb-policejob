@@ -300,6 +300,7 @@ Config.AuthorizedVehicles = {
         ["d"] = "Police Charger",
         ["rbchgr18b"] = "Police Charger 2",
         ["2leo9"] = "Leo",
+        ["pbus"] = "Gefägnisbus",
 	}
 }
 
