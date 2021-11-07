@@ -85,7 +85,7 @@ Config.Locations = {
        [2] = {label = "Prison", coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
        [3] = {label = "Sheriff Station Paleto", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
        [4] = {label = "Police HQ Vespucci", coords = vector4(-1096.7, -839.46, 19.0, 122.76)},
-       [4] = {label = "Sheriff Station Sandy Shores", coords = vector4(1853.1, 3689.09, 34.27, 207.15)},
+       [5] = {label = "Sheriff Station Sandy Shores", coords = vector4(1853.1, 3689.09, 34.27, 207.15)},
    },
 }
 
