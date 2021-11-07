@@ -382,7 +382,7 @@ end)
 CreateThread(function()
     while true do
         sleep = 2000
-        if LocalPlayer.state['isLoggedIn'] and PlayerJob.name == "police" or PlayerJob.name == "fbi" then
+        if LocalPlayer.state.isLoggedIn and PlayerJob.name == "police" or PlayerJob.name == "fbi" then
             local pos = GetEntityCoords(PlayerPedId())
             for k, v in pairs(Config.Locations["duty"]) do
                 if #(pos - v) < 5 then
