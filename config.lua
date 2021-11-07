@@ -287,6 +287,11 @@ Config.AuthorizedVehicles = {
         ["fbi"] = "FBI 1",
         ["fbi2"] = "FBI 2",
         ["riot2"] = "Riot 2",
+        ["police7"] = "Police 7",
+        ["police10"] = "Police 10",
+        ["d"] = "Police Charger",
+        ["rbchgr18b"] = "Police Charger 2",
+        ["2leo9"] = "Leo",
 	}
 }
 
