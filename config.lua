@@ -24,6 +24,7 @@ Config.Locations = {
        [4] = vector4(-1123.8, -849.71, 13.47, 124.24),
        [5] = vector4(2523.31, -470.36, 92.99, 308.54),
        [6] = vector4(1866.5, 3697.93, 33.6, 211.41),
+       [7] = vector4(4816.98, -4301.69, 5.34, 260.29),
    },
    ["stash"] = {
        [1] = vector3(453.075, -980.124, 30.889),
@@ -300,7 +301,7 @@ Config.AuthorizedVehicles = {
         ["d"] = "Police Charger",
         ["rbchgr18b"] = "Police Charger 2",
         ["2leo9"] = "Leo",
-        ["pbus"] = "Gefägnisbus",
+        ["pbus"] = "Gefängnisbus",
 	}
 }
 
