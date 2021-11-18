@@ -299,6 +299,12 @@ Config.AuthorizedVehicles = {
         ["rbchgr18b"] = "Police Charger 2",
         ["2leo9"] = "Leo",
         ["pbus"] = "Gefängnisbus",
+        ["polbuffalor"] = "Police Buffalo",
+        ["polalamor"] = "Police Alalamor",
+        ["polgaunletr"] = "Police Gaunlet",
+        ["bcsoscout"] = "Police Scout",
+        ["bcsofugitive"] = "Police Fugitive",
+        ["bcsosandking"] = "Police Sandking",
 	}
 }
 
