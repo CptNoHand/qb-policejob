@@ -305,6 +305,10 @@ Config.AuthorizedVehicles = {
         ["bcsoscout"] = "Police Scout",
         ["bcsofugitive"] = "Police Fugitive",
         ["bcsosandking"] = "Police Sandking",
+        ["apolicecoq"] = "Police Corvette",
+        ["apolicec6"] = "Police Porsche",
+        ["pd_20camaro"] = "Police Camaro",
+        ["pd_avent"] = "Police Aventador",
 	}
 }
 
