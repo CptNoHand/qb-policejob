@@ -2,91 +2,62 @@ Config = {}
 
 Config.Objects = {
     ["cone"] = {model = `prop_roadcone02a`, freeze = false},
-    ["barier"] = {model = `prop_barrier_work06a`, freeze = true},
-    ["schotten"] = {model = `prop_snow_sign_road_06g`, freeze = true},
+    ["barrier"] = {model = `prop_barrier_work06a`, freeze = true},
+    ["roadsign"] = {model = `prop_snow_sign_road_06g`, freeze = true},
     ["tent"] = {model = `prop_gazebo_03`, freeze = true},
     ["light"] = {model = `prop_worklight_03b`, freeze = true},
 }
 
+Config.MaxSpikes = 8
+
+Config.HandCuffItem = 'handcuffs'
+
+Config.LicenseRank = 2
 Config.Locations = {
-   ["duty"] = {
-       [1] = vector3(-446.69, 6012.86, 32.29),
-       [2] = vector3(380.87, -1595.5, 30.05),
-       [3] = vector3(2511.28, -428.23, 94.58),
-       [4] = vector3(2511.74, -355.78, 94.09),
-       [5] = vector3(386.44, 794.39, 187.46),
-       [6] = vector3(441.27, -981.92, 30.69),
-       [7] = vector3(-2223.56, -373.4, 13.32),
-   },
-   ["vehicle"] = {
-       [1] = vector4(-524.07, -4183.18, -0.61, 30.72),
-   },
-   ["stash"] = {
-       [1] = vector3(479.17, -996.71, 30.69),
-       [2] = vector3(-444.58, 6013.43, 37.01),
-       [3] = vector3(365.29, -1598.79, 25.45),
-       [4] = vector3(2519.08, -332.17, 94.09),
-       [5] = vector3(2504.49, -423.47, 94.58),
-       [6] = vector3(2525.13, -332.93, 101.89),
-       [7] = vector3(387.36, 799.69, 187.46),
-       [8] = vector3(-2192.34, -396.0, 13.32),
-   },
-   ["impound"] = {
-       [1] = vector4(454.94, -1023.38, 28.45, 0.88),
-       [2] = vector4(-459.0, 6043.15, 31.34, 132.38),
-       [3] = vector4(402.24, -1631.45, 29.29, 136.81),
-       [4] = vector4(2452.66, -397.71, 92.99, 90.00),
-       [5] = vector4(-2136.09, -397.37, 13.22, 49.78),
-   },
-   ["helicopter"] = {
-       [1] = vector4(449.1, -981.3, 43.69, 88.21),
-       [2] = vector4(-475.55, 5988.34, 31.34, 312.54),
-       [3] = vector4(407.65, -1640.3, 29.29, 314.15),
-       [4] = vector4(2510.84, -342.04, 118.19, 45.00),
-   },
-   ["armory"] = {
-       [1] = vector3(482.55, -995.27, 30.69),
-       [2] = vector3(-449.15, 6015.39, 37.0),
-       [3] = vector3(364.65, -1604.02, 25.45),
-       [4] = vector3(362.07, -1599.09, 25.45),
-       [5] = vector3(2525.77, -342.45, 101.89),
-       [6] = vector3(-2210.79, -380.74, 13.32),
+    ["duty"] = {
+        [1] = vector3(440.085, -974.924, 30.689),
+        [2] = vector3(-449.811, 6012.909, 31.815),
     },
-   ["trash"] = {
-       [1] = vector3(450.39, -981.51, 30.69),
-   },
-   ["fingerprint"] = {
-       [1] = vector3(474.75, -1013.27, 26.27),
-       [2] = vector3(-440.22, 6010.63, 27.58),
-       [3] = vector3(372.77, -1593.84, 30.05),
-       [4] = vector3(2509.73, -426.92, 94.58),
-       [5] = vector3(2507.86, -334.09, 105.69),
-       [6] = vector3(2516.04, -325.82, 105.69),
-       [7] = vector3(386.08, 796.17, 187.46),
-       [8] = vector3(-2202.78, -388.75, 13.32),
+    ["vehicle"] = {
+        [1] = vector4(448.159, -1017.41, 28.562, 90.654),
+        [2] = vector4(471.13, -1024.05, 28.17, 274.5),
+        [3] = vector4(-455.39, 6002.02, 31.34, 87.93),
     },
-   ["evidence"] = {
-       [1] = vector3(474.24, -990.67, 26.27),
-       [2] = vector3(-452.82, 5999.58, 37.01),
-       [3] = vector3(361.77, -1602.21, 30.05),
-       [4] = vector3(2511.48, -332.36, 101.89),
-       [5] = vector3(-2197.21, -401.31, 13.32),
-       [6] = vector3(473.12, -1007.52, 26.27),
-       [7] = vector3(370.92, -1591.34, 30.05),
-   },
-   ["stations"] = {
-       [1] = {label = "Mission Row", coords = vector4(428.23, -984.28, 29.76, 3.5)},
-       [2] = {label = "Bolingbroke", coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
-       [3] = {label = "Paleto Sheriff Station", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
-       [4] = {label = "Davis Police Station", coords = vector4(377.73, -1606.16, 30.2, 48.28)},
-       [5] = {label = "Park Ranger Station", coords = vector4(384.75, 795.41, 187.46, 256.33)},
-       [6] = {label = "State Police Station", coords = vector4(-2211.88, -377.51, 13.32, 130.41)},
-   },
+    ["stash"] = {
+        [1] = vector3(453.075, -980.124, 30.889),
+    },
+    ["impound"] = {
+        [1] = vector4(436.68, -1007.42, 27.32, 180.0),
+        [2] = vector4(-436.14, 5982.63, 31.34, 136.0),
+    },
+    ["helicopter"] = {
+        [1] = vector4(449.168, -981.325, 43.691, 87.234),
+        [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
+    },
+    ["armory"] = {
+        [1] = vector3(462.23, -981.12, 30.68),
+    },
+    ["trash"] = {
+        [1] = vector3(439.0907, -976.746, 30.776),
+    },
+    ["fingerprint"] = {
+        [1] = vector3(460.9667, -989.180, 24.92),
+    },
+    ["evidence"] = {
+        [1] = vector3(442.1722, -996.067, 30.689),
+        [2] = vector3(451.7031, -973.232, 30.689),
+        [3] = vector3(455.1456, -985.462, 30.689),
+    },
+    ["stations"] = {
+        [1] = {label = "Police Station", coords = vector4(428.23, -984.28, 29.76, 3.5)},
+        [2] = {label = "Prison", coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
+        [3] = {label = "Police Station Paleto", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
+    },
 }
 
 Config.ArmoryWhitelist = {}
 
-Config.Helicopter = "POLMAV"
+Config.PoliceHelicopter = "POLMAV"
 
 Config.SecurityCameras = {
     hideradar = false,
