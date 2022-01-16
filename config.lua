@@ -545,7 +545,34 @@ Config.Items = {
             type = "item",
             slot = 21,
             authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
-        }
+        },
+        [22] = {
+            name = "cctv",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 22,
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+        },
+        [23] = {
+            name = "360cctv",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 23,
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+        },
+        [24] = {
+            name = "camviewer",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 24,
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+        },
     }
 }
 
