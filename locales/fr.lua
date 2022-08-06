@@ -40,6 +40,7 @@ local Translations = {
         put_anklet_on = 'Vous avez mis un bracelet éléctronique sur %{firstname} %{lastname}.',
         vehicle_flagged = 'Vehicule %{plate} à été signalé pour %{reason}',
         impound_vehicle_removed = 'Le véhicule à été sortis de la fourrière!',
+        impounded = 'Vehicule mis en fourrière',
     },
     info = {
         mr = 'Mr.',
@@ -73,7 +74,7 @@ local Translations = {
         cash_found = 'Vous avez trouvé $%{cash} sur le civil.',
         sent_jail_for = 'Vous avez envoyé la personne en prison pour %{time} mois',
         fine_received = 'Vous avez reçu une amende de $%{fine}',
-        blip_text = 'Alerte 911 - %{text}',
+        blip_text = 'Alerte 911 - %{value}',
         jail_time = 'Temps de prison',
         submit = 'Soummettre',
         time_months = 'Temps en mois',
@@ -107,10 +108,11 @@ local Translations = {
         trash = 'Poubelle',
         trash_enter = '[~g~E~s~] Poubelle',
         stash_enter = '[~g~E~s~] Entrer dans le Casier',
-        target_location = 'La position de ${firstname} ${lastname} à été marqué sur votre carte.',
+        target_location = 'La position de %{firstname} %{lastname} à été marqué sur votre carte.',
         anklet_location = 'Position du bracelet',
         new_call = 'Nouvel appel',
-    },
+        officer_down = 'Officier %{lastname} | %{callsign} Au sol'
+ },
     evidence = {
         red_hands = 'Mains rouges',
         wide_pupils = 'Pupilles dilatées',
@@ -178,6 +180,7 @@ local Translations = {
         robbing = 'Dépouille la personne...',
         place_object = 'Place un objet..',
         remove_object = 'Retire un objet..',
+        impound = 'Met le véhicule en fourrière..',
     },
 }
 

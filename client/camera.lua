@@ -40,7 +40,7 @@ local function CloseSecurityCamera()
 end
 
 local function InstructionButton(ControlButton)
-    N_0xe83a3e3557a56640(ControlButton)
+    ScaleformMovieMethodAddParamPlayerNameString(ControlButton)
 end
 
 local function InstructionButtonMessage(text)
@@ -50,7 +50,7 @@ local function InstructionButtonMessage(text)
 end
 
 local function CreateInstuctionScaleform(scaleform)
-    local scaleform = RequestScaleformMovie(scaleform)
+    scaleform = RequestScaleformMovie(scaleform)
     while not HasScaleformMovieLoaded(scaleform) do
         Wait(0)
     end
@@ -118,25 +118,33 @@ RegisterNetEvent('police:client:ActiveCamera', function(cameraId)
 end)
 
 RegisterNetEvent('police:client:DisableAllCameras', function()
-    for k, v in pairs(Config.SecurityCameras.cameras) do 
+    for k, _ in pairs(Config.SecurityCameras.cameras) do
         Config.SecurityCameras.cameras[k].isOnline = false
     end
 end)
 
 RegisterNetEvent('police:client:EnableAllCameras', function()
-    for k, v in pairs(Config.SecurityCameras.cameras) do 
+    for k, _ in pairs(Config.SecurityCameras.cameras) do
         Config.SecurityCameras.cameras[k].isOnline = true
     end
 end)
 
 RegisterNetEvent('police:client:SetCamera', function(key, isOnline)
-    Config.SecurityCameras.cameras[key].isOnline = isOnline
+    if type(key) == 'table' and table.type(key) == 'array' then
+        for _, v in pairs(key) do
+            Config.SecurityCameras.cameras[v].isOnline = isOnline
+        end
+    elseif type(key) == 'number' then
+        Config.SecurityCameras.cameras[key].isOnline = isOnline
+    else
+        error('police:client:SetCamera did not receive the right type of key\nreceived type: ' .. type(key) .. '\nreceived value: ' .. key)
+    end
 end)
 
 -- Threads
 CreateThread(function()
     while true do
-        sleep = 2000
+        local sleep = 2000
         if createdCamera ~= 0 then
             sleep = 5
             local instructions = CreateInstuctionScaleform("instructional_buttons")

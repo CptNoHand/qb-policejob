@@ -13,6 +13,8 @@ Config.MaxSpikes = 8
 Config.HandCuffItem = 'handcuffs'
 
 Config.LicenseRank = 2
+
+Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 Config.Locations = {
     ["duty"] = {
         [1] = vector3(-446.69, 6012.86, 32.29),
@@ -626,7 +628,8 @@ Config.VehicleSettings = {
             ["11"] = true,
             ["12"] = true,
             ["13"] = true,
-        }
+        },
+		["livery"] = 1,
     },
     ["car2"] = {
         ["extras"] = {
@@ -643,6 +646,7 @@ Config.VehicleSettings = {
             ["11"] = true,
             ["12"] = true,
             ["13"] = true,
-        }
+        },
+		["livery"] = 1,
     }
 }
