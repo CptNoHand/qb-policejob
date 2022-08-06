@@ -3,6 +3,7 @@ QBCore = exports['qb-core']:GetCoreObject()
 isHandcuffed = false
 cuffType = 1
 isEscorted = false
+draggerId = 0
 PlayerJob = {}
 onDuty = false
 local DutyBlips = {}
@@ -74,7 +75,7 @@ AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
 
     if PlayerJob and PlayerJob.name ~= "police" then
         if DutyBlips then
-            for _, v in pairs(DutyBlips) do
+            for k, v in pairs(DutyBlips) do
                 RemoveBlip(v)
             end
         end
@@ -92,7 +93,7 @@ RegisterNetEvent('QBCore:Client:OnPlayerUnload', function()
     ClearPedTasks(PlayerPedId())
     DetachEntity(PlayerPedId(), true, false)
     if DutyBlips then
-        for _, v in pairs(DutyBlips) do
+        for k, v in pairs(DutyBlips) do
             RemoveBlip(v)
         end
         DutyBlips = {}
@@ -109,7 +110,7 @@ RegisterNetEvent('QBCore:Client:OnJobUpdate', function(JobInfo)
 
     if JobInfo.name ~= "police" then
         if DutyBlips then
-            for _, v in pairs(DutyBlips) do
+            for k, v in pairs(DutyBlips) do
                 RemoveBlip(v)
             end
         end
@@ -139,13 +140,13 @@ RegisterNetEvent('police:client:UpdateBlips', function(players)
     if PlayerJob and (PlayerJob.name == 'police' or PlayerJob.name == 'ambulance') and
         onDuty then
         if DutyBlips then
-            for _, v in pairs(DutyBlips) do
+            for k, v in pairs(DutyBlips) do
                 RemoveBlip(v)
             end
         end
         DutyBlips = {}
         if players then
-            for _, data in pairs(players) do
+            for k, data in pairs(players) do
                 local id = GetPlayerFromServerId(data.source)
                 CreateDutyBlips(id, data.label, data.job, data.location)
 
@@ -209,7 +210,7 @@ end)
 
 -- Threads
 CreateThread(function()
-    for _, station in pairs(Config.Locations["stations"]) do
+    for k, station in pairs(Config.Locations["stations"]) do
         local blip = AddBlipForCoord(station.coords.x, station.coords.y, station.coords.z)
         SetBlipSprite(blip, 60)
         SetBlipAsShortRange(blip, true)
