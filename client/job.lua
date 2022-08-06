@@ -883,12 +883,7 @@ CreateThread(function ()
         else
             sleep = 1000
         end
-        else
-            inGarage = false
-            exports['qb-menu']:closeMenu()
-            exports['qb-core']:HideText()
-        end
-    end)
+    end
 end)
 
 -- Fingerprint Thread
