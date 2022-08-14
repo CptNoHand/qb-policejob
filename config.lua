@@ -22,6 +22,7 @@ Config.Locations = {
         [5] = vector3(386.44, 794.39, 187.46),
         [6] = vector3(441.27, -981.92, 30.69),
         [7] = vector3(-2223.56, -373.4, 13.32),
+        [8] = vector3(1834.03, 3677.93, 34.19),
     },
     ["vehicle"] = {
         [1] = vector4(-524.07, -4183.18, -0.61, 30.72),
@@ -56,6 +57,7 @@ Config.Locations = {
         [4] = vector3(362.07, -1599.09, 25.45),
         [5] = vector3(2525.77, -342.45, 101.89),
         [6] = vector3(-2210.79, -380.74, 13.32),
+        [7] = vector3(1838.32, 3686.27, 34.19),
     },
     ["trash"] = {
         [1] = vector3(450.39, -981.51, 30.69),
@@ -307,10 +309,6 @@ Config.AuthorizedVehicles = {
         ["bcsoscout"] = "Police Scout",
         ["bcsofugitive"] = "Police Fugitive",
         ["bcsosandking"] = "Police Sandking",
-        ["apolicecoq"] = "Police Corvette",
-        ["apolicec6"] = "Police Porsche",
-        ["pd_20camaro"] = "Police Camaro",
-        ["pd_avent"] = "Police Aventador",
 	}
 }
 
