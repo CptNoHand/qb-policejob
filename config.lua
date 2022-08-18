@@ -379,7 +379,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 1,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [2] = {
             name = "weapon_stungun",
@@ -390,7 +390,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 2,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [3] = {
             name = "weapon_pumpshotgun",
@@ -404,7 +404,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 3,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [4] = {
             name = "weapon_smg",
@@ -419,7 +419,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 4,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [5] = {
             name = "weapon_carbinerifle",
@@ -434,7 +434,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 5,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [6] = {
             name = "weapon_nightstick",
@@ -443,7 +443,7 @@ Config.Items = {
             info = {},
             type = "weapon",
             slot = 6,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [7] = {
             name = "pistol_ammo",
@@ -452,7 +452,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 7,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [8] = {
             name = "smg_ammo",
@@ -461,7 +461,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 8,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [9] = {
             name = "shotgun_ammo",
@@ -470,7 +470,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 9,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [10] = {
             name = "rifle_ammo",
@@ -479,7 +479,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 10,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [11] = {
             name = "handcuffs",
@@ -488,7 +488,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 11,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [12] = {
             name = "weapon_flashlight",
@@ -497,7 +497,7 @@ Config.Items = {
             info = {},
             type = "weapon",
             slot = 12,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [13] = {
             name = "empty_evidence_bag",
@@ -506,7 +506,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 13,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [14] = {
             name = "police_stormram",
@@ -515,7 +515,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 14,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [15] = {
             name = "armor",
@@ -524,7 +524,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 15,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [16] = {
             name = "radio",
@@ -533,7 +533,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 16,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [17] = {
             name = "heavyarmor",
@@ -542,7 +542,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 17,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [18] = {
             name = "bodycam",
@@ -551,7 +551,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 18,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [19] = {
             name = "customlicense",
@@ -560,7 +560,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 19,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [20] = {
             name = "bandage",
@@ -569,7 +569,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 20,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [21] = {
             name = "specialbadge",
@@ -578,7 +578,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 21,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [22] = {
             name = "cctv",
@@ -587,7 +587,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 22,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [23] = {
             name = "360cctv",
@@ -596,7 +596,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 23,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
         [24] = {
             name = "camviewer",
@@ -605,7 +605,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 24,
-            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26}
         },
     }
 }
