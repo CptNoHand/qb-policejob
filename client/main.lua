@@ -204,6 +204,24 @@ RegisterNetEvent('police:client:SendPoliceEmergencyAlert', function()
     local Player = QBCore.Functions.GetPlayerData()
     TriggerServerEvent('police:server:policeAlert', Lang:t('info.officer_down', {lastname = Player.charinfo.lastname, callsign = Player.metadata.callsign}))
     TriggerServerEvent('hospital:server:ambulanceAlert', Lang:t('info.officer_down', {lastname = Player.charinfo.lastname, callsign = Player.metadata.callsign}))
+    local data = exports['cd_dispatch']:GetPlayerInfo()
+    TriggerServerEvent('cd_dispatch:AddNotification', {
+        job_table = {'police', 'ambulance'}, 
+        coords = data.coords,
+        title = '10-00 - Person down',
+        message = 'A '..data.sex..' Officer is down at '..data.street, 
+        flash = 0,
+        unique_id = tostring(math.random(0000000,9999999)),
+        blip = {
+            sprite = 403, 
+            scale = 1.2, 
+            colour = 5,
+            flashes = false, 
+            text = '911 - Officer down',
+            time = (5*60*1000),
+            sound = 1,
+        }
+    })
 end)
 
 -- Threads
