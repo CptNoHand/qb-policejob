@@ -211,7 +211,14 @@ RegisterNetEvent('police:client:PutPlayerInVehicle', function()
     if player ~= -1 and distance < 2.5 then
         local playerId = GetPlayerServerId(player)
         if not isHandcuffed and not isEscorted then
-            TriggerServerEvent("police:server:PutPlayerInVehicle", playerId)
+            QBCore.Functions.Progressbar("putincar", "Putting in Vehicle!", 2500, false, true, {
+                disableMovement = false,
+                disableCarMovement = false,
+                disableMouse = false,
+                disableCombat = true,
+            }, {}, {}, {}, function() -- Done
+                TriggerServerEvent("police:server:PutPlayerInVehicle", playerId)
+            end)
         end
     else
         QBCore.Functions.Notify(Lang:t("error.none_nearby"), "error")
@@ -223,7 +230,15 @@ RegisterNetEvent('police:client:SetPlayerOutVehicle', function()
     if player ~= -1 and distance < 2.5 then
         local playerId = GetPlayerServerId(player)
         if not isHandcuffed and not isEscorted then
-            TriggerServerEvent("police:server:SetPlayerOutVehicle", playerId)
+            QBCore.Functions.Progressbar("takeoutofcar", "Taking out of Vehicle!", 2500, false, true, {
+                disableMovement = false,
+                disableCarMovement = false,
+                disableMouse = false,
+                disableCombat = true,
+            }, {}, {}, {}, function() -- Done
+                TriggerServerEvent("police:server:SetPlayerOutVehicle", playerId)
+                TriggerEvent("police:client:EscortPlayer")
+            end)
         end
     else
         QBCore.Functions.Notify(Lang:t("error.none_nearby"), "error")

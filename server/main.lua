@@ -652,6 +652,12 @@ RegisterNetEvent('police:server:EscortPlayer', function(playerId)
     local EscortPlayer = QBCore.Functions.GetPlayer(playerId)
     if not Player or not EscortPlayer then return end
 
+    
+    if EscortPlayer.PlayerData.metadata["ishandcuffed"] then
+        TriggerClientEvent("a5-playerinter:client:Escort", Player.PlayerData.source, EscortPlayer.PlayerData.source)
+        return
+    end
+
     if (Player.PlayerData.job.name == "police" or Player.PlayerData.job.name == "ambulance") or (EscortPlayer.PlayerData.metadata["ishandcuffed"] or EscortPlayer.PlayerData.metadata["isdead"] or EscortPlayer.PlayerData.metadata["inlaststand"]) then
         TriggerClientEvent("police:client:GetEscorted", EscortPlayer.PlayerData.source, Player.PlayerData.source)
     else
