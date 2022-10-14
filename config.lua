@@ -649,6 +649,15 @@ Config.Items = {
             slot = 28,
             authorizedJobGrades = {9, 12, 21, 25, 30}
         },
+        [29] = {
+            name = "megaphone",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 29,
+            authorizedJobGrades = {9, 12, 21, 25, 30}
+        },
     }
 }
 
