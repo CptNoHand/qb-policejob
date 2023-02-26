@@ -316,7 +316,7 @@ CreateThread(function()
     while true do
         Wait(10)
         if LocalPlayer.state.isLoggedIn then
-            if PlayerJob.name == 'police' and onDuty or PlayerJob.name == 'fbi' and onDuty then
+            if PlayerJob.name == 'police' and PlayerJob.onduty then
                 if IsPlayerFreeAiming(PlayerId()) and GetSelectedPedWeapon(PlayerPedId()) == `WEAPON_FLASHLIGHT` then
                     if next(Casings) then
                         local pos = GetEntityCoords(PlayerPedId(), true)
