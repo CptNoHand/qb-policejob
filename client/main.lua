@@ -7,6 +7,7 @@ PlayerJob = {}
 onDuty = false
 local DutyBlips = {}
 
+
 -- Functions
 local function CreateDutyBlips(playerId, playerLabel, playerJob, playerLocation)
     local ped = GetPlayerPed(playerId)
@@ -125,7 +126,7 @@ RegisterNetEvent('police:client:sendBillingMail', function(amount)
             gender = Lang:t('info.mrs')
         end
         local charinfo = QBCore.Functions.GetPlayerData().charinfo
-        TriggerServerEvent('qb-phone:server:sendNewMail', {
+        TriggerServerEvent('qs-smartphone:server:sendNewMail', {
             sender = Lang:t('email.sender'),
             subject = Lang:t('email.subject'),
             message = Lang:t('email.message', {value = gender, value2 = charinfo.lastname, value3 = amount}),
@@ -135,7 +136,7 @@ RegisterNetEvent('police:client:sendBillingMail', function(amount)
 end)
 
 RegisterNetEvent('police:client:UpdateBlips', function(players)
-    if PlayerJob and (PlayerJob.name == 'police' or PlayerJob.name == 'ambulance') and
+    if PlayerJob and (PlayerJob.name == 'police') and
         onDuty then
         if DutyBlips then
             for _, v in pairs(DutyBlips) do

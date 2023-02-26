@@ -13,7 +13,7 @@ local function UpdateBlips()
     local dutyPlayers = {}
     local players = QBCore.Functions.GetQBPlayers()
     for _, v in pairs(players) do
-        if v and (v.PlayerData.job.name == "police" or v.PlayerData.job.name == "ambulance") and v.PlayerData.job.onduty then
+        if v and (v.PlayerData.job.name == "police") and v.PlayerData.job.onduty then
             local coords = GetEntityCoords(GetPlayerPed(v.PlayerData.source))
             local heading = GetEntityHeading(GetPlayerPed(v.PlayerData.source))
             dutyPlayers[#dutyPlayers+1] = {
@@ -1066,6 +1066,18 @@ end)
 
 RegisterNetEvent('police:server:SyncSpikes', function(table)
     TriggerClientEvent('police:client:SyncSpikes', -1, table)
+end)
+
+RegisterServerEvent('police:server:checkBank')
+AddEventHandler('police:server:checkBank', function(playerId)
+    local src = source
+    local SearchedPlayer = QBCore.Functions.GetPlayer(playerId)
+    if SearchedPlayer ~= nil then 
+         TriggerClientEvent('chat:addMessage', source, {
+             template = '<div class="chat-message emergency" style="background-color: rgba(190, 97, 18, 1.0);"><b>SYSTEM:</b> {0}</div>',
+             args = {'Player has $'..SearchedPlayer.PlayerData.money["bank"]..' in his bank account.'}
+        })
+    end
 end)
 
 -- Threads

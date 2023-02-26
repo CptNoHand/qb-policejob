@@ -97,6 +97,17 @@ RegisterNetEvent('police:client:SearchPlayer', function()
     end
 end)
 
+RegisterNetEvent('police:client:checkBank')
+AddEventHandler('police:client:checkBank', function()
+    local player, distance = GetClosestPlayer()
+    if player ~= -1 and distance < 2.5 then
+        local playerId = GetPlayerServerId(player)
+        TriggerServerEvent("police:server:checkBank", playerId)
+    else
+        QBCore.Functions.Notify("No one around!", "error")
+    end
+end)
+
 RegisterNetEvent('police:client:SeizeCash', function()
     local player, distance = QBCore.Functions.GetClosestPlayer()
     if player ~= -1 and distance < 2.5 then
