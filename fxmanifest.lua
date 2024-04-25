@@ -1,14 +1,15 @@
 fx_version 'cerulean'
 game 'gta5'
-
-description 'QB-PoliceJob'
-version '1.2.5'
+lua54 'yes'
+author 'Kakarot'
+description 'Provides police tools, evidence, job and more functionality for players to use as a cop'
+version '1.3.5'
 
 shared_scripts {
-    'config.lua',
-    '@qb-core/shared/locale.lua',
-    'locales/de.lua',
-    'locales/*.lua'
+	'config.lua',
+	'@qb-core/shared/locale.lua',
+	'locales/en.lua',
+	'locales/*.lua'
 }
 
 client_scripts {
@@ -42,5 +43,3 @@ files {
 	'html/main.css',
 	'html/vcr-ocd.ttf'
 }
-
-lua54 'yes'
