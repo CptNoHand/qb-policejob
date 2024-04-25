@@ -181,8 +181,15 @@ RegisterNetEvent('police:client:JailPlayer', function()
                 }
             }
         })
+
+        -- This code was imported by rcore_prison, to get properLoaded user on server.
+    
         if tonumber(dialog['jailtime']) > 0 then
-            TriggerServerEvent("police:server:JailPlayer", playerId, tonumber(dialog['jailtime']))
+            local jailCommand = ('%s %s %s'):format('jail', playerId, tonumber(dialog['jailtime']))
+
+            if jailCommand then
+                ExecuteCommand(jailCommand)
+            end
         else
             QBCore.Functions.Notify(Lang:t("error.time_higher"), "error")
         end

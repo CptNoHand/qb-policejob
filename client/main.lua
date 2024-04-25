@@ -78,6 +78,10 @@ AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
         end
         DutyBlips = {}
     end
+    
+    if Config.BlockWallThermals then
+        SeethroughSetMaxThickness(0.25) -- block thermals from seeing through walls; default is 10000.0
+    end
 end)
 
 RegisterNetEvent('QBCore:Client:OnPlayerUnload', function()
